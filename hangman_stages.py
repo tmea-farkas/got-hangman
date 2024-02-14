@@ -1,4 +1,4 @@
-lives_visual_dict = {
+stages_visual = {
 
         0: """
                 ___________
