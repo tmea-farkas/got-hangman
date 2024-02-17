@@ -38,9 +38,14 @@ def display_logo():
 
 def get_player_name():
     """
-    Ask the user for their name input
+    Ask the user for their name input, validating it to contain only letters
     """
-    return input("What is your name?\n")
+    while True:
+        name = input("What is your name?\n")
+        if name.isalpha():
+            return name
+        else:
+            print("Please enter a valid name that contains only letters")
 
 
 def display_intro(name):
