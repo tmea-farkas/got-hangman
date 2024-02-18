@@ -134,15 +134,14 @@ def hangman_play(word):
         print("\n")
     if guessed:
         print("You did it! You saved " + word)
-        play_again()
     else:
         print("Looks like the Gods are not in your favour today! Better luck next time, ey!")
-        play_again()
 
 def play_again():
     while input("What about another round?(Y/N)").upper() == "Y":
         print("\n")
-        hangman_play()
+        word = get_name()
+        hangman_play(word)
     else:
         print("See you next time!")
         print("\n")
@@ -155,6 +154,7 @@ def main():
     display_rules(player_name)
     word = get_name()
     hangman_play(word)
+    play_again()
 
 if __name__ == "__main__":
 
