@@ -99,6 +99,7 @@ def hangman_play(word):
     print(word_completion)
     print("\n")
     while not guessed and guesses > 0:
+        print(f"You have {guesses} guesses left")
         guess = input("Please guess a letter or the name: ").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
