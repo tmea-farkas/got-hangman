@@ -1,4 +1,4 @@
-from names import names
+from words import words
 import random
 from time import sleep
 from hangman_stages import stages_visual
@@ -71,14 +71,72 @@ def start_game(name):
     """
     play_game = input(f"{name} the Great, are you ready to save a life today? Y/N:\n")
     if play_game == "Y":
-        hangman_play()
+        word = get_name()
+        hangman_play(word)
     else:
         display_logo()
 
-def hangman_play():
+def get_name():
+    """
+    Getting a random word from the words list
+    """
+    word = random.choice(words)
+    return word
+
+
+
+def hangman_play(word):
     """
     Hangman logic
     """
+    word_completion = "_" * len(word)
+    guessed = False
+    guessed_letters = []
+    guessed_words = []
+    guesses = 7
+    print("Let's begin!")
+    print(stages_visual(guesses))
+    print(word_completion)
+    print("\n")
+    while not guessed and guesses > 0:
+        guess = input("Please guess a letter or the name: ").upper()
+        if len(guess) == 1 and guess.isalpha():
+            if guess in guessed_letters:
+                print("You already guessed the letter", guess)
+            elif guess not in word:
+                print(guess, "is not in the word.")
+                guesses -= 1
+                guessed_letters.append(guess)
+            else:
+                print("Great! You're one step closer to being a True Hero")
+                guessed_letters.append(guess)
+                word_to_list = list(word_completion)
+                indices = [i for i, letter in enumerate(word) if letter == guess]
+                for index in indices:
+                    word_to_list[index] = guess
+                word_completion = "".join(word_to_list)
+                if word_completion == word:
+                    guessed = True
+        elif len(guess) == len(word) and guess.isalpha():
+            if guess in guessed_words:
+                print("You already guessed the word", guess)
+            elif guess != word:
+                print(guess, "is not the word")
+                guesses -= 1
+                guessed_words.append(guess)
+            else:
+                guessed = True
+                word_completion = word
+        else:
+            print("Not a valid guess")
+        print(stages_visual(guesses))
+        print(word_completion)
+        print("\n")
+    if guessed:
+        print("You did it! You saved" + word)
+    else:
+        print("Looks like the Gods are not in your favour today! Better luck next time, ey!")
+
 
 
 def main():
@@ -86,6 +144,8 @@ def main():
     player_name = get_player_name()
     display_intro(player_name)
     display_rules(player_name)
+    word = get_name()
+    hangman_play(word)
 
 if __name__ == "__main__":
 

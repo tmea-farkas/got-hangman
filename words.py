@@ -1,4 +1,4 @@
-names = [
+words = [
     "DAENERYS TARGERYEN",
     "JON SNOW",
     "ROBB STARK",
