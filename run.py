@@ -89,7 +89,7 @@ def hangman_play(word):
     """
     Hangman logic
     """
-    word_completion = "_" * len(word)
+    word_completion = "".join(["_" if char != " " else " " for char in word])
     guessed = False
     guessed_letters = []
     guessed_words = []
@@ -133,11 +133,20 @@ def hangman_play(word):
         print(word_completion)
         print("\n")
     if guessed:
-        print("You did it! You saved" + word)
+        print("You did it! You saved " + word)
+        play_again()
     else:
         print("Looks like the Gods are not in your favour today! Better luck next time, ey!")
+        play_again()
 
-
+def play_again():
+    while input("What about another round?(Y/N)").upper() == "Y":
+        print("\n")
+        hangman_play()
+    else:
+        print("See you next time!")
+        print("\n")
+        display_logo()
 
 def main():
     display_logo()
