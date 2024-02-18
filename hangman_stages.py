@@ -5,7 +5,7 @@ def stages_visual(guesses):
                | /         |
                |/        (x_x)
                |         ``|``
-               |          / \
+               |          / \\
                |
         """,
               """
@@ -13,7 +13,7 @@ def stages_visual(guesses):
                | /         |
                |/        (._.)
                |         ``|``
-               |            \
+               |            \\
                |
             """,
         """

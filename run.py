@@ -69,12 +69,19 @@ def start_game(name):
     """
     Asking the user if they want to start the game
     """
-    play_game = input(f"{name} the Great, are you ready to save a life today? Y/N:\n")
-    if play_game == "Y":
-        word = get_name()
-        hangman_play(word)
-    else:
-        display_logo()
+    while True:
+        play_game = input(f"{name} the Great, are you ready to save a life today? Y/N:\n").upper()
+        print("\n")
+        if play_game == "Y":
+            word = get_name()
+            hangman_play(word)
+            break
+        elif play_game == "N":
+            display_logo()
+            name = get_player_name()  # Prompt the user for their name again
+        else:
+            print("Please enter 'Y' to start the game, or 'N' if you're not ready to")
+            print("\n")
 
 def get_name():
     """
@@ -134,7 +141,9 @@ def hangman_play(word):
         print(word_completion)
         print("\n")
     if guessed:
-        print("You did it! You saved " + word)
+        print("What do we say to the God of Death?...")
+        print("\n")
+        print(word + " is alive for another day because of you!")
     else:
         print("Looks like the Gods are not in your favour today! Better luck next time, ey!")
 
@@ -153,9 +162,10 @@ def main():
     player_name = get_player_name()
     display_intro(player_name)
     display_rules(player_name)
-    word = get_name()
-    hangman_play(word)
-    play_again()
+    start_game(player_name)
+   # word = get_name()
+   # hangman_play(word)
+   # play_again()
 
 if __name__ == "__main__":
 
