@@ -144,8 +144,11 @@ def hangman_play(word):
         print("What do we say to the God of Death?...")
         print("\n")
         print(word + " is alive for another day because of you!")
+        play_again()
     else:
+        print(f"The victim was {word}, and is now dead")
         print("Looks like the Gods are not in your favour today! Better luck next time, ey!")
+        play_again()
 
 def play_again():
     while input("What about another round?(Y/N)").upper() == "Y":
@@ -163,9 +166,9 @@ def main():
     display_intro(player_name)
     display_rules(player_name)
     start_game(player_name)
-   # word = get_name()
-   # hangman_play(word)
-   # play_again()
+    word = get_name()
+    hangman_play(word)
+    play_again()
 
 if __name__ == "__main__":
 
