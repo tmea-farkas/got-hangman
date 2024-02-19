@@ -107,7 +107,7 @@ def hangman_play(word):
     print("\n")
     while not guessed and guesses > 0:
         print(f"You have {guesses} guesses left")
-        guess = input("Please guess a letter or the name: ").upper()
+        guess = input("Please guess a letter or the name: \n").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
                 print("You already guessed the letter", guess)
@@ -151,7 +151,7 @@ def hangman_play(word):
         play_again()
 
 def play_again():
-    while input("What about another round?(Y/N)").upper() == "Y":
+    while input("What about another round?(Y/N) \n").upper() == "Y":
         print("\n")
         word = get_name()
         hangman_play(word)

@@ -13,6 +13,11 @@ Welcome to the Game of Thrones Hangman!
 
 # Technologies
 
+- Python language to develop the project
+- VSCode as the project IDE
+- 
+- ASCIIART.eu to create ascii art of Game of Thrones logo
+
 # Deployment
 
 # Testing
