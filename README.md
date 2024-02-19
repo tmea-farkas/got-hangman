@@ -1,32 +1,31 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Welcome to the Game of Thrones Hangman!
 
-Welcome,
+# The project
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
 
-## Reminders
+# The Scope
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## UX
 
-## Creating the Heroku app
+# Design
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+# Features
 
-1. `heroku/python`
-2. `heroku/nodejs`
+# Technologies
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+# Deployment
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+# Testing
 
-Connect your GitHub repository and deploy as normal.
+# Bugs
 
-## Constraints
+# Credits
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+Code written by me with the help of:
 
----
+- Matthew Bodden - my mentor
+- Slack colleagues
+- Youtube tutorials - ex.: https://www.youtube.com/watch?v=m4nEnsavl6w&t=173s
 
-Happy coding!
+Thank you!
+
