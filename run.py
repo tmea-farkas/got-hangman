@@ -1,6 +1,5 @@
 from words import words
-import random
-from time import sleep
+import random, os
 from hangman_stages import stages_visual
 
 
@@ -35,6 +34,9 @@ def display_logo():
     print("Welcome to Westeros!")
     print("\n")
 
+def clear_window():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 def get_player_name():
     """
     Ask the user for their name input, validating it to contain only letters
@@ -51,7 +53,7 @@ def display_intro(name):
     """
     Display introductory message with the player's name.
     """
-
+    clear_window()
     print(f"By the decree of the Seven Kingdoms, let it be known that {name}, the Fearless, is henceforth proclaimed as the Hero of Westeros! \n")
 
 def display_rules(name):
@@ -106,7 +108,7 @@ def hangman_play(word):
     print("\n")
     while not guessed and guesses > 0:
         print(f"You have {guesses} guesses left")
-        guess = input("Please guess a letter or the name: \n").upper()
+        guess = input("Please guess a letter: \n").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
                 print("You already guessed the letter", guess)
@@ -115,6 +117,7 @@ def hangman_play(word):
                 guesses -= 1
                 guessed_letters.append(guess)
             else:
+                clear_window()
                 print("Great! You're one step closer to being a True Hero")
                 guessed_letters.append(guess)
                 word_to_list = list(word_completion)
@@ -136,6 +139,7 @@ def hangman_play(word):
                 word_completion = word
         else:
             print("Not a valid guess")
+        clear_window()
         print(stages_visual(guesses))
         print(word_completion)
         print("\n")
