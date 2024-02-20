@@ -9,27 +9,27 @@ def display_logo():
     Displaying the GoT logo with a welcome message
     """
     logo = '''                                                                                                    
-    ┌──────────────────────────────────────────────────────────────┐
-    │  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████    █████▒      │
-    │ ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██   ▒       │
-    │▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒▒████ ░       │
-    │░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░░▓█▒  ░       │
-    │░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░░▒█░          │
-    │ ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░  ▒ ░          │
-    │  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░  ░            │
-    │░ ░   ░   ░   ▒   ░      ░      ░      ░ ░ ░ ▒   ░ ░          │
-    │      ░       ░  ░       ░      ░  ░       ░ ░                │
-    │                                                              │
-    │▄▄▄█████▓ ██░ ██  ██▀███   ▒█████   ███▄    █ ▓█████   ██████ │
-    │▓  ██▒ ▓▒▓██░ ██▒▓██ ▒ ██▒▒██▒  ██▒ ██ ▀█   █ ▓█   ▀ ▒██    ▒ │
-    │▒ ▓██░ ▒░▒██▀▀██░▓██ ░▄█ ▒▒██░  ██▒▓██  ▀█ ██▒▒███   ░ ▓██▄   │
-    │░ ▓██▓ ░ ░▓█ ░██ ▒██▀▀█▄  ▒██   ██░▓██▒  ▐▌██▒▒▓█  ▄   ▒   ██▒│
-    │  ▒██▒ ░ ░▓█▒░██▓░██▓ ▒██▒░ ████▓▒░▒██░   ▓██░░▒████▒▒██████▒▒│
-    │  ▒ ░░    ▒ ░░▒░▒░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ ░░ ▒░ ░▒ ▒▓▒ ▒ ░│
-    │    ░     ▒ ░▒░ ░  ░▒ ░ ▒░  ░ ▒ ▒░ ░ ░░   ░ ▒░ ░ ░  ░░ ░▒  ░ ░│
-    │  ░       ░  ░░ ░  ░░   ░ ░ ░ ░ ▒     ░   ░ ░    ░   ░  ░  ░  │
-    │          ░  ░  ░   ░         ░ ░           ░    ░  ░      ░  │
-    └──────────────────────────────────────────────────────────────┘
+        ┌──────────────────────────────────────────────────────────────┐
+        │  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████    █████▒      │
+        │ ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██   ▒       │
+        │▒██░▄▄▄░▒██  ▀█▄  ▓██    ▓██░▒███      ▒██░  ██▒▒████ ░       │
+        │░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░░▓█▒  ░       │
+        │░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░░▒█░          │
+        │ ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░  ▒ ░          │
+        │  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░  ░            │
+        │░ ░   ░   ░   ▒   ░      ░      ░      ░ ░ ░ ▒   ░ ░          │
+        │      ░       ░  ░       ░      ░  ░       ░ ░                │
+        │                                                              │
+        │▄▄▄█████▓ ██░ ██  ██▀███   ▒█████   ███▄    █ ▓█████   ██████ │
+        │▓  ██▒ ▓▒▓██░ ██▒▓██ ▒ ██▒▒██▒  ██▒ ██ ▀█   █ ▓█   ▀ ▒██    ▒ │
+        │▒ ▓██░ ▒░▒██▀▀██░▓██ ░▄█ ▒▒██░  ██▒▓██  ▀█ ██▒▒███   ░ ▓██▄   │
+        │░ ▓██▓ ░ ░▓█ ░██ ▒██▀▀█▄  ▒██   ██░▓██▒  ▐▌██▒▒▓█  ▄   ▒   ██▒│
+        │  ▒██▒ ░ ░▓█▒░██▓░██▓ ▒██▒░ ████▓▒░▒██░   ▓██░░▒████▒▒██████▒▒│
+        │  ▒ ░░    ▒ ░░▒░▒░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ ░░ ▒░ ░▒ ▒▓▒ ▒ ░│
+        │    ░     ▒ ░▒░ ░  ░▒ ░ ▒░  ░ ▒ ▒░ ░ ░░   ░ ▒░ ░ ░  ░░ ░▒  ░ ░│
+        │  ░       ░  ░░ ░  ░░   ░ ░ ░ ░ ▒     ░   ░ ░    ░   ░  ░  ░  │
+        │          ░  ░  ░   ░         ░ ░           ░    ░  ░      ░  │
+        └──────────────────────────────────────────────────────────────┘
                                                         '''
     print(logo)
     print("Welcome to Westeros!")
@@ -41,10 +41,10 @@ def get_player_name():
     """
     while True:
         name = input("What is your name?\n")
-        if name.isalpha():
+        if name.isalpha() and len(name) <= 10:
             return name
         else:
-            print("Please enter a valid name that contains only letters")
+            print("If we sought an epic tale, we'd employ dragons for missives, not mere crows.")
 
 
 def display_intro(name):
@@ -52,15 +52,15 @@ def display_intro(name):
     Display introductory message with the player's name.
     """
 
-    print(f"You are hereby pronounced the Hero of Westeros, {name} the Great!\n")
+    print(f"By the decree of the Seven Kingdoms, let it be known that {name}, the Fearless, is henceforth proclaimed as the Hero of Westeros! \n")
 
 def display_rules(name):
     """
     Rules to the game
     """
-    print("You will be provided with the name of a much beloved character to guess before your tries run out\n"
-         "Should you fail to guess correctly, the person will be hanged and the wrath of the Seven will rain down upon us all!\n"
-         "You have 7 chances to save them! Use them visely!\n"
+    print("Prepare yourself, for you are tasked with the sacred duty of guessing the name of a beloved character before your attempts expire\n"
+         "Fail, and the dire consequences shall befall them, with the wrath of the Seven Kingdoms descending upon us all!\n"
+         "You are granted but 7 chances to rescue them from the abyss. Choose wisely, for the fate of Westeros hangs in the balance!\n"
          "May your quest be guided by the Old Gods and the New!...\n")
     start_game(name)
 
@@ -69,7 +69,7 @@ def start_game(name):
     Asking the user if they want to start the game
     """
     while True:
-        play_game = input(f"{name} the Great, are you ready to save a life today? Y/N:\n").upper()
+        play_game = input(f"{name} the Fearless, are you ready to save a life today? Y/N:\n").upper()
         print("\n")
         if play_game == "Y":
             word = get_name()
