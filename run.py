@@ -1,11 +1,21 @@
 from words import words
 import random, os
 from hangman_stages import stages_visual
+from colorama import init, Fore
+init(autoreset= True)
 
+
+class C: # adapted from code aquired from Matt Bodden
+    '''
+    C class contains the terminal color shortcuts
+    for use when printing things to the terminal
+    '''
+    RED = '\33[91m'
+    GREEN = '\33[32m'
 
 def display_logo():
     """
-    Displaying the GoT logo with a welcome message
+    Displaying the logo with a welcome message
     """
     logo = '''                                                                                                    
         ┌──────────────────────────────────────────────────────────────┐
@@ -30,11 +40,14 @@ def display_logo():
         │          ░  ░  ░   ░         ░ ░           ░    ░  ░      ░  │
         └──────────────────────────────────────────────────────────────┘
                                                         '''
-    print(logo)
+    print(Fore.RED + logo)
     print("Welcome to Westeros!")
     print("\n")
 
 def clear_window():
+    """
+    Clear display window for better user experience
+    """
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def get_player_name():
@@ -81,7 +94,7 @@ def start_game(name):
             display_logo()
             name = get_player_name()  # Prompt the user for their name again
         else:
-            print("Please enter 'Y' to start the game, or 'N' if you're not ready to")
+            print("Choose now to venture forth by entering 'Y', or delay your journey by selecting 'N' if you're not yet prepared to face the challenges ahead.")
             print("\n")
 
 def get_name():
@@ -93,7 +106,7 @@ def get_name():
 
 
 
-def hangman_play(word):
+def hangman_play(word): # code adapted from Youtube tutorial
     """
     Hangman logic
     """
@@ -102,6 +115,7 @@ def hangman_play(word):
     guessed_letters = []
     guessed_words = []
     guesses = 7
+    clear_window()
     print("Let's begin!")
     print(stages_visual(guesses))
     print(word_completion)
