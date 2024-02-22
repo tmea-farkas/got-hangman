@@ -17,7 +17,7 @@ def display_logo():
     """
     Displaying the logo with a welcome message
     """
-    logo = '''                                                                                                    
+    logo = '''                                       
         ┌──────────────────────────────────────────────────────────────┐
         │  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████    █████▒      │
         │ ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██   ▒       │
@@ -36,7 +36,7 @@ def display_logo():
         │  ░       ░  ░░ ░  ░░   ░ ░ ░ ░ ▒     ░   ░ ░    ░   ░  ░  ░  │
         └──────────────────────────────────────────────────────────────┘
                                                         '''
-    print(Fore.RED + logo)
+    print(Fore.LIGHTRED_EX + logo)
     print("Welcome to Westeros! The Game of Thrones inspired Hangman Game \n")
 
 def clear_window():
@@ -50,7 +50,7 @@ def get_player_name():
     Ask the user for their name input, validating it to contain only letters
     """
     while True:
-        name = input("What is your name?\n")
+        name = input("What is your name?\n").capitalize()
         if name.isalpha() and len(name) <= 10:
             return name
         else:
@@ -63,7 +63,7 @@ def display_intro(name):
     """
     clear_window()
     print("\n")
-    print(f"By the decree of the Seven Kingdoms, let it be known that {name}, the Fearless, is henceforth proclaimed as the Hero of Westeros! \n")
+    print(f"By the decree of the Seven Kingdoms, let it be known that {name} the Fearless, is henceforth proclaimed as the Hero of Westeros! \n")
 
 def display_rules(name):
     """
@@ -125,14 +125,14 @@ def hangman_play(word): # code adapted from Youtube tutorial
         guess = input("Please guess a letter: \n").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
-                print("You already guessed the letter", guess)
+                print(Fore.LIGHTRED_EX + "You already guessed the letter", guess)
             elif guess not in word:
-                print(guess, "is not in the word.")
+                print(guess, Fore.LIGHTRED_EX + " is not in the word.")
                 guesses -= 1
                 guessed_letters.append(guess)
             else:
                 print("\n")
-                print("Great! You're one step closer to being a True Hero")
+                print(Fore.GREEN + "Great! You're one step closer to being a True Hero!")
                 guessed_letters.append(guess)
                 word_to_list = list(word_completion)
                 indices = [i for i, letter in enumerate(word) if letter == guess]
@@ -152,7 +152,7 @@ def hangman_play(word): # code adapted from Youtube tutorial
                 guessed = True
                 word_completion = word
         else:
-            print("Not a valid guess")
+            print(Fore.RED + "Not a valid guess")
         print(stages_visual(guesses))
         print(word_completion)
         print("\n")
@@ -162,7 +162,7 @@ def hangman_play(word): # code adapted from Youtube tutorial
         print(word + " is alive for another day because of you!")
         play_again()
     else:
-        print(f"The victim was {word}, and is now dead")
+        print(f"The victim was {word}, and is now dead!")
         print("Looks like the Gods are not in your favour today! Better luck next time, ey!")
         play_again()
 
