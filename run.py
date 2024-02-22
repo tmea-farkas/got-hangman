@@ -25,7 +25,6 @@ def display_logo():
         │░▓█  ██▓░██▄▄▄▄██ ▒██    ▒██ ▒▓█  ▄    ▒██   ██░░▓█▒  ░       │
         │░▒▓███▀▒ ▓█   ▓██▒▒██▒   ░██▒░▒████▒   ░ ████▓▒░░▒█░          │
         │ ░▒   ▒  ▒▒   ▓▒█░░ ▒░   ░  ░░░ ▒░ ░   ░ ▒░▒░▒░  ▒ ░          │
-        │  ░   ░   ▒   ▒▒ ░░  ░      ░ ░ ░  ░     ░ ▒ ▒░  ░            │
         │░ ░   ░   ░   ▒   ░      ░      ░      ░ ░ ░ ▒   ░ ░          │
         │      ░       ░  ░       ░      ░  ░       ░ ░                │
         │                                                              │
@@ -37,7 +36,6 @@ def display_logo():
         │  ▒ ░░    ▒ ░░▒░▒░ ▒▓ ░▒▓░░ ▒░▒░▒░ ░ ▒░   ▒ ▒ ░░ ▒░ ░▒ ▒▓▒ ▒ ░│
         │    ░     ▒ ░▒░ ░  ░▒ ░ ▒░  ░ ▒ ▒░ ░ ░░   ░ ▒░ ░ ░  ░░ ░▒  ░ ░│
         │  ░       ░  ░░ ░  ░░   ░ ░ ░ ░ ▒     ░   ░ ░    ░   ░  ░  ░  │
-        │          ░  ░  ░   ░         ░ ░           ░    ░  ░      ░  │
         └──────────────────────────────────────────────────────────────┘
                                                         '''
     print(Fore.RED + logo)
@@ -67,16 +65,19 @@ def display_intro(name):
     Display introductory message with the player's name.
     """
     clear_window()
+    print("\n")
     print(f"By the decree of the Seven Kingdoms, let it be known that {name}, the Fearless, is henceforth proclaimed as the Hero of Westeros! \n")
 
 def display_rules(name):
     """
     Rules to the game
     """
-    print("Prepare yourself, for you are tasked with the sacred duty of guessing the name of a beloved character before your attempts expire\n"
-         "Fail, and the dire consequences shall befall them, with the wrath of the Seven descending upon us all!\n"
-         "You are granted but 7 chances to rescue them from the abyss. Choose wisely, for the fate of Westeros hangs in the balance!\n"
-         "May your quest be guided by the Old Gods and the New!...\n")
+    print("Prepare yourself, for you are tasked with the sacred duty of guessing the name of a beloved character before your attempts expire.\n")
+    print("Fail, and the dire consequences shall befall them, with the wrath of the Seven descending upon us all!\n")
+    print("You are granted but 7 chances to rescue them from the abyss. Choose wisely, for the fate of Westeros hangs in the balance!\n")
+    print("\n")
+    print("May your quest be guided by the Old Gods and the New!...\n")
+    print("\n")
     start_game(name)
 
 def start_game(name):
@@ -96,7 +97,7 @@ def start_game(name):
         else:
             print("Choose now to venture forth by entering 'Y', or delay your journey by selecting 'N' if you're not yet prepared to face the challenges ahead.")
             print("\n")
-
+        clear_window()
 def get_name():
     """
     Getting a random word from the words list
@@ -110,6 +111,7 @@ def hangman_play(word): # code adapted from Youtube tutorial
     """
     Hangman logic
     """
+    clear_window() #keep
     word_completion = "".join(["_" if char != " " else " " for char in word])
     guessed = False
     guessed_letters = []
@@ -121,7 +123,7 @@ def hangman_play(word): # code adapted from Youtube tutorial
     print("\n")
     while not guessed and guesses > 0:
         print(f"You have {guesses} guesses left")
-        print("Letters already guessed: ", ",".join(guessed_letters))
+        print("Letters guessed so far: ", ",".join(guessed_letters))
         print("\n")
         guess = input("Please guess a letter: \n").upper()
         if len(guess) == 1 and guess.isalpha():
@@ -132,6 +134,7 @@ def hangman_play(word): # code adapted from Youtube tutorial
                 guesses -= 1
                 guessed_letters.append(guess)
             else:
+                print("\n")
                 print("Great! You're one step closer to being a True Hero")
                 guessed_letters.append(guess)
                 word_to_list = list(word_completion)
@@ -174,6 +177,7 @@ def play_again():
     else:
         print("See you next time!")
         print("\n")
+        clear_window()
         display_logo()
 
 def main():
