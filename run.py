@@ -41,7 +41,7 @@ def display_logo():
         └──────────────────────────────────────────────────────────────┘
                                                         '''
     print(Fore.RED + logo)
-    print("Welcome to Westeros!")
+    print("Welcome to Westeros! The Game of Thrones inspired Hangman Game")
     print("\n")
 
 def clear_window():
@@ -74,7 +74,7 @@ def display_rules(name):
     Rules to the game
     """
     print("Prepare yourself, for you are tasked with the sacred duty of guessing the name of a beloved character before your attempts expire\n"
-         "Fail, and the dire consequences shall befall them, with the wrath of the Seven Kingdoms descending upon us all!\n"
+         "Fail, and the dire consequences shall befall them, with the wrath of the Seven descending upon us all!\n"
          "You are granted but 7 chances to rescue them from the abyss. Choose wisely, for the fate of Westeros hangs in the balance!\n"
          "May your quest be guided by the Old Gods and the New!...\n")
     start_game(name)
@@ -115,13 +115,14 @@ def hangman_play(word): # code adapted from Youtube tutorial
     guessed_letters = []
     guessed_words = []
     guesses = 7
-    clear_window()
-    print("Let's begin!")
+    print("Let us begin!")
     print(stages_visual(guesses))
     print(word_completion)
     print("\n")
     while not guessed and guesses > 0:
         print(f"You have {guesses} guesses left")
+        print("Letters already guessed: ", ",".join(guessed_letters))
+        print("\n")
         guess = input("Please guess a letter: \n").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
@@ -131,7 +132,6 @@ def hangman_play(word): # code adapted from Youtube tutorial
                 guesses -= 1
                 guessed_letters.append(guess)
             else:
-                clear_window()
                 print("Great! You're one step closer to being a True Hero")
                 guessed_letters.append(guess)
                 word_to_list = list(word_completion)
@@ -153,7 +153,6 @@ def hangman_play(word): # code adapted from Youtube tutorial
                 word_completion = word
         else:
             print("Not a valid guess")
-        clear_window()
         print(stages_visual(guesses))
         print(word_completion)
         print("\n")
