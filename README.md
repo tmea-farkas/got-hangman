@@ -60,14 +60,17 @@ Logo was created by ASCIIART.eu from an image of the Game of Thrones logo
 3. Favicon
 The favicon was added to further elevate user satisfaction
 ![GoT Favicon]()
+
 4. Colour coordinated messages
     - Green colour for positive reinforcement
 ![Green message](https://github.com/tmea-farkas/got-hangman/blob/main/images/green.message.png)
     - Red for failed input
 ![Red message](https://github.com/tmea-farkas/got-hangman/blob/main/images/red%20message.png)
+
 5. Y/N choice questions
 For easy navigation Yes or No questions were implemented where appropriate to ensure the user of a good flow of navigation through the game
 ![Y/N questions](https://github.com/tmea-farkas/got-hangman/blob/main/images/question1.png)
+
 6. Input validation
 Input validation has been implemented wherever user input was requested to avoid undesired input being accepted therefore damaging user experience.
 ![Input validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/validation.png)

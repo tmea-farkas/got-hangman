@@ -120,6 +120,7 @@ def hangman_play(word): # code adapted from Youtube tutorial
     print("\n")
     while not guessed and guesses > 0:
         print(f"You have {guesses} guesses left")
+        print("\n")
         print("Letters guessed so far: ", ",".join(guessed_letters))
         print("\n")
         guess = input("Please guess a letter: \n").upper()
@@ -127,6 +128,7 @@ def hangman_play(word): # code adapted from Youtube tutorial
             if guess in guessed_letters:
                 print(Fore.LIGHTRED_EX + "You already guessed the letter", guess)
             elif guess not in word:
+                print("\n")
                 print(guess, Fore.LIGHTRED_EX + " is not in the word.")
                 guesses -= 1
                 guessed_letters.append(guess)
