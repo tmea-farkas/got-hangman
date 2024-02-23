@@ -1,5 +1,8 @@
 Welcome to the Game of Thrones Hangman!
 
+![Game window]()
+[Game of Thrones Hangman](https://got-hangman-46eee30c0ce3.herokuapp.com/)
+
 # The project
 This project is a classic Hangman game with a theme applied from the popular TV Show Game of Thrones. This is represented by not only the logo, but the guessable character names and wording of the game creating the illusion of a quest for the player, essentially involving them in the story.
 
@@ -14,10 +17,25 @@ The scope of the project was to create a game that is easily navigated, engaging
 From a design perspective I aimed to stay within the theme of Game of Thrones. As well as wording, colours and theme.
 # Features
 1. The background
+I chose to put a background image to further improve user experience
+![background image]()
 2. Logo
-3. Colour coordinated messages
-4. Y/N choice questions
-5. Input validation
+Logo was created by ASCIIART.eu from an image of the Game of Thrones logo
+![GoT Logo]()
+3. Favicon
+The favicon was added to further elevate user satisfaction
+![GoT Favicon]()
+4. Colour coordinated messages
+    - Green colour for positive reinforcement
+![Green message]()
+    - Red for failed input
+![Red message]()
+5. Y/N choice questions
+For easy navigation Yes or No questions were implemented where appropriate to ensure the user of a good flow of navigation through the game
+![Y/N questions]()
+6. Input validation
+Input validation has been implemented wherever user input was requested to avoid undesired input being accepted therefore damaging user experience.
+![Input validation]()
 
 ## Features left to implement
 At a future stage, I am planning to implement a score keeping system by using an API to keep a list of the top 10 players and give the user feedback if they are on the list once they have finished playing.
@@ -29,6 +47,7 @@ At a future stage, I am planning to implement a score keeping system by using an
 - Colorama to add colours to print messages
 - Vecteezy to get SVG background image
 - ASCIIART.eu to create ascii art of Game of Thrones logo
+- Favicon.io to generate favicon
 
 # Deployment
 
