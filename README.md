@@ -6,16 +6,38 @@ Welcome to the Game of Thrones Hangman!
 # The project
 This project is a classic Hangman game with a theme applied from the popular TV Show Game of Thrones. This is represented by not only the logo, but the guessable character names and wording of the game creating the illusion of a quest for the player, essentially involving them in the story.
 
-# The Scope
-The scope of the project was to create a game that is easily navigated, engaging and can be played multiple times even by a returning user.
-## UX
-## As a user
-- First-time user
-- Returning user
-## As the developer
-# Design
-From a design perspective I aimed to stay within the theme of Game of Thrones. As well as wording, colours and theme.
-# Features
+
+## UXD (User Experience Design)
+- The Strategy Plane
+This first stage of development consists of doing the research on what will be the use of the project. Finding out what the user would like to see in the project and what they want to use it for.
+
+*First Time user goals*
+- accessing information relating to the game
+- undestanding the flow of the game and rules
+- navigate the game through without having to reload the page
+- be able to play the game again
+*Returning user goals*
+- be able to use the game again with ease
+*Developer goals*
+- to provide a game for Game of Thrones fans
+- to ensure easy navigation
+- to use media elements enhancing user experience
+- to make a game that is engaging and entartaining to both first-time and returning users
+
+- The Scope Plane
+*Phase one*
+*Phase Two*
+
+- The Structure Plane
+*Images*
+Considering images that are both within the theme and aestethically pleasing not losing sight of accessibility and ux.
+*Colours*
+The use of a basic colour-scheme meant that the project will not look too crowded, providing ease while staying within the "bloody" theme of Game of Thrones.
+
+- The Skeleton Plane
+The Skeleton plane contributes to the placement of visual media and texts for maximum effect and efficiency. Where the structure plane begins to give shape to the mass of requirements arising from our strategic objectives the skeleton plane further refines that structure, identifying specific aspects of interface, navigation, and information design that will make the intangible structure concrete.
+
+- The Surface Plane
 1. The background
 I chose to put a background image to further improve user experience
 ![background image](https://github.com/tmea-farkas/got-hangman/blob/main/images/background.image.png)
@@ -60,6 +82,7 @@ To deploy the project I followed the steps provided by C.I at the end of the Lov
     - connected to GitHub in the Deploy section
     - searched for the repository
     - enabled automatic deploys so Heroku would deploy the project every time there was a new push to GitHub
+## Forking
 
 
 # Testing
