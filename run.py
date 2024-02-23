@@ -141,16 +141,6 @@ def hangman_play(word): # code adapted from Youtube tutorial
                 word_completion = "".join(word_to_list)
                 if word_completion == word:
                     guessed = True
-        elif len(guess) == len(word) and guess.isalpha():
-            if guess in guessed_words:
-                print("You already guessed the word", guess)
-            elif guess != word:
-                print(guess, "is not the word")
-                guesses -= 1
-                guessed_words.append(guess)
-            else:
-                guessed = True
-                word_completion = word
         else:
             print(Fore.RED + "Not a valid guess")
         print(stages_visual(guesses))
