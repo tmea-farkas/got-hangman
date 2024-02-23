@@ -116,6 +116,7 @@ def hangman_play(word): # code adapted from Youtube tutorial
     guesses = 7
     print("Let us begin!")
     print(stages_visual(guesses))
+    print("\n")
     print(word_completion)
     print("\n")
     while not guessed and guesses > 0:
@@ -146,6 +147,7 @@ def hangman_play(word): # code adapted from Youtube tutorial
         else:
             print(Fore.RED + "Not a valid guess")
         print(stages_visual(guesses))
+        print("\n")
         print(word_completion)
         print("\n")
     if guessed:
@@ -154,12 +156,13 @@ def hangman_play(word): # code adapted from Youtube tutorial
         print(word + " is alive for another day because of you!")
         play_again()
     else:
+        print("\n")
         print(f"The victim was {word}, and is now dead!")
         print("Looks like the Gods are not in your favour today! Better luck next time, ey!")
         play_again()
 
 def play_again():
-    while input("What about another round?(Y/N) \n").upper() == "Y":
+    while input("Shall we save another one?(Y/N) \n").upper() == "Y":
         print("\n")
         word = get_name()
         hangman_play(word)
