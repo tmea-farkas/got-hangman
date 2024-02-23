@@ -1,6 +1,6 @@
 Welcome to the Game of Thrones Hangman!
 
-![Game window]()
+![Game window](https://github.com/tmea-farkas/got-hangman/blob/main/images/hangman.png)
 [Game of Thrones Hangman](https://got-hangman-46eee30c0ce3.herokuapp.com/)
 
 # The project
@@ -18,24 +18,24 @@ From a design perspective I aimed to stay within the theme of Game of Thrones. A
 # Features
 1. The background
 I chose to put a background image to further improve user experience
-![background image]()
+![background image](https://github.com/tmea-farkas/got-hangman/blob/main/images/background.image.png)
 2. Logo
 Logo was created by ASCIIART.eu from an image of the Game of Thrones logo
-![GoT Logo]()
+![GoT Logo](https://github.com/tmea-farkas/got-hangman/blob/main/images/ascii.logo.png)
 3. Favicon
 The favicon was added to further elevate user satisfaction
 ![GoT Favicon]()
 4. Colour coordinated messages
     - Green colour for positive reinforcement
-![Green message]()
+![Green message](https://github.com/tmea-farkas/got-hangman/blob/main/images/green.message.png)
     - Red for failed input
-![Red message]()
+![Red message](https://github.com/tmea-farkas/got-hangman/blob/main/images/red%20message.png)
 5. Y/N choice questions
 For easy navigation Yes or No questions were implemented where appropriate to ensure the user of a good flow of navigation through the game
-![Y/N questions]()
+![Y/N questions](https://github.com/tmea-farkas/got-hangman/blob/main/images/question1.png)
 6. Input validation
 Input validation has been implemented wherever user input was requested to avoid undesired input being accepted therefore damaging user experience.
-![Input validation]()
+![Input validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/validation.png)
 
 ## Features left to implement
 At a future stage, I am planning to implement a score keeping system by using an API to keep a list of the top 10 players and give the user feedback if they are on the list once they have finished playing.
@@ -50,6 +50,17 @@ At a future stage, I am planning to implement a score keeping system by using an
 - Favicon.io to generate favicon
 
 # Deployment
+To deploy the project I followed the steps provided by C.I at the end of the Love Sandwiches walkthrough project:
+- first I cleaned up the run.py file
+- added import files to the requirements.txt
+- on to Heroku where I created a new app
+    - adding the name and region
+    - added relevant config vars in the Settings section
+    - added Python and NodeJS buildpacks
+    - connected to GitHub in the Deploy section
+    - searched for the repository
+    - enabled automatic deploys so Heroku would deploy the project every time there was a new push to GitHub
+
 
 # Testing
 The project has gone through continuous testing during development using print messages at every stage. Has been tested by several users.
@@ -61,6 +72,8 @@ It has also been tested by pep8 standards which provided no issues with the code
     - fixed by adjusting the indentation
 - not taking the user back to the top at the end of the game
     - called the relevant function at the end
+- favicon not displaying
+    - changed the file paths 
 
 # Credits
 
