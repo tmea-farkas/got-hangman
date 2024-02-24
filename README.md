@@ -136,23 +136,16 @@ It has also been tested by pep8 standards which provided no issues with the code
 |Logo to appear on page load              | Loading game window           |Logo appears               |         ✔       |
 |Welcome message to display on page load  | Loading game window           |Message displaying         |         ✔       |
 |Ask user for name input on load          | Loading game window           |Input request displaying   |         ✔       |
-|Input validation  (< 10 characters & alphabetical)           | Typing more than 10 characters|Validation message appears |         ✔       |
-|Rules Displayed                          | Name input completion + Enter |Displaying                 |         ✔       |
-|Y/N choice to take user to game or back to logo display| Name input completion + Enter |- if Y = go to game  |         ✔       |
-|      to logo display                    |                               |- if N = go to logo        |                  |
-|Display hangman stages w/ each guess     |Game entry choice answer = Y   |Displaying each stage      |         ✔       |
-|                                         |  and game is baing played     |                           |                 |
+|Input validation  (< 10 characters & alphabetical) | Typing more than 10 characters|Validation message appears |         ✔       |
+|Rules Displayed  | Name input completion + Enter |Displaying rules  |         ✔       |
+|Y/N choice to take user to game or back to logo display| Name input completion + Enter |- if Y = go to game, - if N = go to logo, if else = display error message and ask again |         ✔       |
+|Display hangman stages w/ each guess     |Game entry choice answer = Y and game is baing played  |Displaying each stage      |         ✔       |
 |Keep track of guessed letters            | Letter inputs                 |Letters displaying         |         ✔       |
-|Display error(red) message when letter   | Wrong letter input            |Message displaying         |         ✔       |
-|is not in the word                       |                               |                           |                  |
-|Display confirmation(green) message when | Correct letter input          |Message displaying         |         ✔       |
-|letter is in the word                    |                               |                           |                  |
-|Reveal result if not guessed within      | Incorrect guess until         |Message displaying         |         ✔       | 
-|available number of tries                |    out of tries               |                           |                  |
-|Reveal confirmation message when name    | Correctly guessing before     |Message displaying         |         ✔       |
-|guessed correctly before tries run out   |   tries run out               |                           |                  |
-|Y/N question to play another game        | Finishing the game            |- if Y = new game          |         ✔       |
-|                                         |                               |- if N = back to logo      |         ✔       |
+|Display error(red) message when letter is not in the word  | Wrong letter input            |Message displaying and promts user until correct input |         ✔       |
+|Display confirmation(green) message when letter is in the word| Correct letter input          |Message displaying and prompts user until correct input |         ✔       |
+|Reveal result if not guessed within available number of tries | Incorrect guess until out of tries |Message displaying |         ✔       | 
+|Reveal confirmation message when name guessed correctly before tries run out | Correctly guessing before tries run out   |Message displaying |         ✔       |
+|Y/N question to play another game  | Finishing the game   |- if Y = new game, - if N = back to logo, if else = prompt user to correct input |         ✔       |
 
 
 # Bugs
