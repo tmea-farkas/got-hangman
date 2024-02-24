@@ -139,20 +139,20 @@ It has also been tested by pep8 standards which provided no issues with the code
 |Validation  (< 10 characters )           | Typing more than 10 characters|Validation message appears |         ✔       |
 |Rules Displayed                          | Name input completion + Enter |Displaying                 |         ✔       |
 |Y/N choice to take user to game or back  | Name input completion + Enter |- if Y = go to game        |         ✔       |
-|      to logo display                    |^                              |^   - if N = go to logo    |^                 |
+|      to logo display                    |                               |- if N = go to logo        |                  |
 |Display hangman stages w/ each guess     |Game entry choice answer = Y   |Displaying each stage      |         ✔       |
-|                                         |^ and game is baing played     |^                          |^                 |
+|                                         |  and game is baing played     |                           |                 |
 |Keep track of guessed letters            | Letter inputs                 |Letters displaying         |         ✔       |
 |Display error(red) message when letter   | Wrong letter input            |Message displaying         |         ✔       |
-|is not in the word                       |^                              |^                          |^                 |
+|is not in the word                       |                               |                           |                  |
 |Display confirmation(green) message when | Correct letter input          |Message displaying         |         ✔       |
-|letter is in the word                    |^                              |^                          |^                 |
+|letter is in the word                    |                               |                           |                  |
 |Reveal result if not guessed within      | Incorrect guess until         |Message displaying         |         ✔       | 
-|available number of tries                |^   out of tries               |^                          |^                 |
-|Reveal confirmation message when name    | Correctly guessing before     |Messag displaying          |         ✔       |
-|guessed correctly before tries run out   |^  tries run out               |^                          |^                 |
+|available number of tries                |    out of tries               |                           |                  |
+|Reveal confirmation message when name    | Correctly guessing before     |Message displaying         |         ✔       |
+|guessed correctly before tries run out   |   tries run out               |                           |                  |
 |Y/N question to play another game        | Finishing the game            |- if Y = new game          |         ✔       |
-|                                         |^                              |^ - if N = back to logo    |^        ✔       |
+|                                         |                               |- if N = back to logo      |         ✔       |
 
 
 # Bugs
