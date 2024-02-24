@@ -79,14 +79,16 @@ def start_game(name):
         if play_game == "Y":
             word = get_name()
             hangman_play(word)
-            break
         elif play_game == "N":
             display_logo()
-            name = get_player_name()  # Prompt the user for their name again
+            name = get_player_name()
         else:
+            clear_window()
             print("Choose now to venture forth by entering 'Y', or delay your journey by selecting 'N' if you're not yet prepared to face the challenges ahead.")
             print("\n")
-        clear_window()
+
+
+
 def get_name():
     """
     Getting a random word from the words list
@@ -154,14 +156,18 @@ def hangman_play(word): # code adapted from Youtube tutorial
         play_again()
 
 def play_again():
-    while input("Shall we try another one?(Y/N) \n").upper() == "Y":
-        print("\n")
-        word = get_name()
-        hangman_play(word)
-    else:
-        print("\n")
-        clear_window()
-        display_logo()
+    while True:
+        answer = input("Shall we try another one?(Y/N) \n").upper()
+        if answer == "Y":
+            print("\n")
+            word = get_name()
+            hangman_play(word)
+        elif answer == "N":
+            display_logo()
+        else:
+            clear_window()
+            print("Which part of 'Y or N' escapes your undestanding? ")
+
 
 def main():
     display_logo()
