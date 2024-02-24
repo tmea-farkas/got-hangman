@@ -55,14 +55,16 @@ The last stage of development, where decisions are finalised and implemented wit
 
 I chose to put a background image to further improve user experience
 ![background image](https://github.com/tmea-farkas/got-hangman/blob/main/images/background.image.png)
+
 2. **Logo**
 
 Logo was created by ASCIIART.eu from an image of the Game of Thrones logo
 ![GoT Logo](https://github.com/tmea-farkas/got-hangman/blob/main/images/ascii.logo.png)
+
 3. **Favicon**
 
 The favicon was added to further elevate user satisfaction
-![GoT Favicon]()
+![GoT Favicon](https://github.com/tmea-farkas/got-hangman/blob/main/images/favicon.png)
 
 4. **Colour coordinated messages**
 
@@ -74,10 +76,12 @@ The favicon was added to further elevate user satisfaction
 
 5. **Y/N choice questions**
 For easy navigation Yes or No questions were implemented where appropriate to ensure the user of a good flow of navigation through the game
+
 ![Y/N questions](https://github.com/tmea-farkas/got-hangman/blob/main/images/question1.png)
 
 6. **Input validation**
 Input validation has been implemented wherever user input was requested to avoid undesired input being accepted therefore damaging user experience.
+
 ![Input validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/validation.png)
 
 ## Features left to implement
