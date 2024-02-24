@@ -69,10 +69,10 @@ def display_rules(name):
     Rules to the game
     """
     print("Prepare yourself, for you are tasked with the sacred duty of"
-          "guessing the name of a beloved character"
-          "before your attempts expire.\n")
+          " guessing the name of a beloved character"
+          " before your attempts expire.\n")
     print("Fail, and the dire consequences shall befall them,"
-          "with the wrath of the Seven descending upon us all!\n")
+          " with the wrath of the Seven descending upon us all!\n")
     print("You are granted but 7 chances to rescue them from the abyss."
           "Choose wisely, for the fate of Westeros hangs in the balance!\n")
     print("\n")
@@ -86,7 +86,7 @@ def start_game(name):
     Asking the user if they want to start the game
     """
     while True:
-        play_game = input(f"{name} the Fearless,"
+        play_game = input(f"{name} the Fearless, "
                           "are you ready to save a life today? Y/N:\n").upper()
         print("\n")
         if play_game == "Y":
@@ -98,8 +98,8 @@ def start_game(name):
         else:
             clear_window()
             print("Choose now to venture forth by entering 'Y',"
-                  "or delay your journey by selecting 'N' if you're not"
-                  "yet prepared to face the challenges ahead.")
+                  " or delay your journey by selecting 'N' if you're not"
+                  " yet prepared to face the challenges ahead.")
             print("\n")
 
 
@@ -144,7 +144,7 @@ def hangman_play(word):  # code adapted from Youtube tutorial
             else:
                 print("\n")
                 print(Fore.GREEN + "Great! You're one step closer"
-                      "to being a True Hero!")
+                      " to being a True Hero!")
                 guessed_letters.append(guess)
                 word_to_list = list(word_completion)
                 indices = [i for i, letter in enumerate(word) if
