@@ -8,7 +8,7 @@ This project is a classic Hangman game with a theme applied from the popular TV 
 
 
 ## UXD (User Experience Design)
-- The Strategy Plane
+- **The Strategy Plane**
 This first stage of development consists of doing the research on what will be the use of the project. Finding out what the user would like to see in the project and what they want to use it for.
 
 *First-Time user goals*
@@ -28,7 +28,7 @@ This first stage of development consists of doing the research on what will be t
 - to use media elements enhancing user experience
 - to make a game that is engaging and entartaining to both first-time and returning users
 
-- The Scope Plane
+- **The Scope Plane**
 At this stage I used the previously gathered knowledge to create a basic idea of what features to implement for the user and what steps to take achieving those goals.
     - e.g. 
         - asking for user name
@@ -37,41 +37,46 @@ At this stage I used the previously gathered knowledge to create a basic idea of
         - creating a story behind the game to make it more enjoyable and engaging increasing the chance for return visits
         - making sure print statements are worded to fit to the theme
 
-- The Structure Plane
+- **The Structure Plane**
 
-*Images*
+*Images*:
 Considering images that are both within the theme and aestethically pleasing not losing sight of accessibility and ux.
 
-*Colours*
+*Colours*:
 The use of a basic colour-scheme meant that the project will not look too crowded, providing ease while staying within the "bloody" theme of Game of Thrones.
 
-- The Skeleton Plane
+- **The Skeleton Plane**
 The Skeleton plane contributes to the placement of visual media and texts for maximum effect and efficiency. Where the structure plane begins to give shape to the mass of requirements arising from our strategic objectives the skeleton plane further refines that structure, identifying specific aspects of interface, navigation, and information design that will make the intangible structure concrete.
 
-- The Surface Plane
+- **The Surface Plane**
 The last stage of development, where decisions are finalised and implemented with concerns to the users sensory experience. Making the game including the colour palette and layout, where the logo appears, important information, user input requests, colour-coding to draw the users attention to key information.
 
-1. The background
+1. **The background**
+
 I chose to put a background image to further improve user experience
 ![background image](https://github.com/tmea-farkas/got-hangman/blob/main/images/background.image.png)
-2. Logo
+2. **Logo**
+
 Logo was created by ASCIIART.eu from an image of the Game of Thrones logo
 ![GoT Logo](https://github.com/tmea-farkas/got-hangman/blob/main/images/ascii.logo.png)
-3. Favicon
+3. **Favicon**
+
 The favicon was added to further elevate user satisfaction
 ![GoT Favicon]()
 
-4. Colour coordinated messages
+4. **Colour coordinated messages**
+
     - Green colour for positive reinforcement
 ![Green message](https://github.com/tmea-farkas/got-hangman/blob/main/images/green.message.png)
+
     - Red for failed input
 ![Red message](https://github.com/tmea-farkas/got-hangman/blob/main/images/red%20message.png)
 
-5. Y/N choice questions
+5. **Y/N choice questions**
 For easy navigation Yes or No questions were implemented where appropriate to ensure the user of a good flow of navigation through the game
 ![Y/N questions](https://github.com/tmea-farkas/got-hangman/blob/main/images/question1.png)
 
-6. Input validation
+6. **Input validation**
 Input validation has been implemented wherever user input was requested to avoid undesired input being accepted therefore damaging user experience.
 ![Input validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/validation.png)
 
@@ -86,6 +91,7 @@ At a future stage, I am planning to implement a score keeping system by using an
 - Vecteezy to get SVG background image
 - ASCIIART.eu to create ascii art of Game of Thrones logo
 - Favicon.io to generate favicon
+- ChatGPT to help with wording of print messages
 
 # Deployment
 To deploy the project I followed the steps provided by C.I at the end of the Love Sandwiches walkthrough project:
