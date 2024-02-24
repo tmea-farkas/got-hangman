@@ -1,15 +1,16 @@
 from words import words
-import random, os
+import random
+import os
 from hangman_stages import stages_visual
 from colorama import init, Fore
-init(autoreset= True)
+init(autoreset=True)
 
 
 def display_logo():
     """
     Displaying the logo with a welcome message
     """
-    logo = '''                                       
+    logo = '''
         ┌──────────────────────────────────────────────────────────────┐
         │  ▄████  ▄▄▄       ███▄ ▄███▓▓█████     ▒█████    █████▒      │
         │ ██▒ ▀█▒▒████▄    ▓██▒▀█▀ ██▒▓█   ▀    ▒██▒  ██▒▓██   ▒       │
@@ -31,11 +32,13 @@ def display_logo():
     print(Fore.LIGHTRED_EX + logo)
     print("Welcome to Westeros! The Game of Thrones inspired Hangman Game \n")
 
+
 def clear_window():
     """
     Clear display window for better user experience
     """
     os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def get_player_name():
     """
@@ -46,7 +49,8 @@ def get_player_name():
         if name.isalpha() and len(name) <= 10:
             return name
         else:
-            print("If we sought an epic tale, we'd employ dragons for missives, not mere crows.")
+            print("If we sought an epic tale, we'd employ dragons for missives,"
+                  "not mere crows.")
 
 
 def display_intro(name):
@@ -56,6 +60,7 @@ def display_intro(name):
     clear_window()
     print("\n")
     print(f"By the decree of the Seven Kingdoms, let it be known that {name} the Fearless, is henceforth proclaimed as the Hero of Westeros! \n")
+
 
 def display_rules(name):
     """
@@ -68,6 +73,7 @@ def display_rules(name):
     print("May your quest be guided by the Old Gods and the New!...\n")
     print("\n")
     start_game(name)
+
 
 def start_game(name):
     """
@@ -88,7 +94,6 @@ def start_game(name):
             print("\n")
 
 
-
 def get_name():
     """
     Getting a random word from the words list
@@ -97,8 +102,7 @@ def get_name():
     return word
 
 
-
-def hangman_play(word): # code adapted from Youtube tutorial
+def hangman_play(word):  # code adapted from Youtube tutorial
     """
     Hangman logic
     """
@@ -155,6 +159,7 @@ def hangman_play(word): # code adapted from Youtube tutorial
         print("Looks like the Gods are not in your favour today! Better luck next time, ey!")
         play_again()
 
+
 def play_again():
     while True:
         answer = input("Shall we try another one?(Y/N) \n").upper()
@@ -178,6 +183,7 @@ def main():
     word = get_name()
     hangman_play(word)
     play_again()
+
 
 if __name__ == "__main__":
 
