@@ -5,14 +5,6 @@ from colorama import init, Fore
 init(autoreset= True)
 
 
-class C: # adapted from code aquired from Matt Bodden
-    '''
-    C class contains the terminal color shortcuts
-    for use when printing things to the terminal
-    '''
-    RED = '\33[91m'
-    GREEN = '\33[32m'
-
 def display_logo():
     """
     Displaying the logo with a welcome message
@@ -108,7 +100,7 @@ def hangman_play(word): # code adapted from Youtube tutorial
     """
     Hangman logic
     """
-    clear_window() #keep
+    clear_window()
     word_completion = "".join(["_" if char != " " else " " for char in word])
     guessed = False
     guessed_letters = []
@@ -145,7 +137,7 @@ def hangman_play(word): # code adapted from Youtube tutorial
                 if word_completion == word:
                     guessed = True
         else:
-            print(Fore.RED + "Not a valid guess")
+            print(Fore.RED + "We both know you can do better...")
         print(stages_visual(guesses))
         print("\n")
         print(word_completion)
@@ -162,12 +154,11 @@ def hangman_play(word): # code adapted from Youtube tutorial
         play_again()
 
 def play_again():
-    while input("Shall we save another one?(Y/N) \n").upper() == "Y":
+    while input("Shall we try another one?(Y/N) \n").upper() == "Y":
         print("\n")
         word = get_name()
         hangman_play(word)
     else:
-        print("See you next time!")
         print("\n")
         clear_window()
         display_logo()
