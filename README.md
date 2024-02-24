@@ -95,7 +95,6 @@ At a future stage, I am planning to implement a score keeping system by using an
 - Vecteezy to get SVG background image
 - ASCIIART.eu to create ascii art of Game of Thrones logo
 - Favicon.io to generate favicon
-- ChatGPT to help with wording of print messages
 
 # Deployment
 To deploy the project I followed the steps provided by C.I at the end of the Love Sandwiches walkthrough project:
@@ -108,7 +107,22 @@ To deploy the project I followed the steps provided by C.I at the end of the Lov
     - connected to GitHub in the Deploy section
     - searched for the repository
     - enabled automatic deploys so Heroku would deploy the project every time there was a new push to GitHub
-## Forking
+## Forking and Cloning
+- The following steps are to be taken to fork a repository:
+    - go to repository
+    - click on the downward arrow next to Fork
+    - click "Create a new fork"
+    - name your repository
+    - click "create fork"
+This will create a copy of the original repository in a remote location.
+- to Clone a repository:
+    - click on "Code"
+    - copy repository URL
+    - open your IDE
+    - click on clone repository
+    - copy the url
+This will create a local copy of the repository.
+
 
 
 # Testing
@@ -141,7 +155,7 @@ It has also been tested by pep8 standards which provided no issues with the code
 
 
 # Bugs
-- cearing the window at the wrong line
+- clearing the window at the wrong line
     - moved the clear_window() function call to the relevant places
 - indentation issue with print statements
     - fixed by adjusting the indentation
@@ -150,11 +164,11 @@ It has also been tested by pep8 standards which provided no issues with the code
 - favicon not displaying
     - changed the file paths 
 
-# Credits
+# Acknowledgements
 
 Code written by me with the help of:
 
-- Matthew Bodden - my mentor
+- Matthew Bodden - mentor
 - Slack colleagues
 - Youtube tutorials - ex.: https://www.youtube.com/watch?v=m4nEnsavl6w&t=173s
 
