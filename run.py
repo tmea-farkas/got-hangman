@@ -50,7 +50,7 @@ def get_player_name():
             return name
         else:
             print("If we sought an epic tale, we'd employ dragons"
-                  "for missives, not mere crows.")
+                  "for missives, not mere crows. Abbreviate!")
 
 
 def display_intro(name):

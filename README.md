@@ -136,9 +136,9 @@ It has also been tested by pep8 standards which provided no issues with the code
 |Logo to appear on page load              | Loading game window           |Logo appears               |         ✔       |
 |Welcome message to display on page load  | Loading game window           |Message displaying         |         ✔       |
 |Ask user for name input on load          | Loading game window           |Input request displaying   |         ✔       |
-|Validation  (< 10 characters )           | Typing more than 10 characters|Validation message appears |         ✔       |
+|Input validation  (< 10 characters & alphabetical)           | Typing more than 10 characters|Validation message appears |         ✔       |
 |Rules Displayed                          | Name input completion + Enter |Displaying                 |         ✔       |
-|Y/N choice to take user to game or back  | Name input completion + Enter |- if Y = go to game        |         ✔       |
+|Y/N choice to take user to game or back to logo display| Name input completion + Enter |- if Y = go to game  |         ✔       |
 |      to logo display                    |                               |- if N = go to logo        |                  |
 |Display hangman stages w/ each guess     |Game entry choice answer = Y   |Displaying each stage      |         ✔       |
 |                                         |  and game is baing played     |                           |                 |
