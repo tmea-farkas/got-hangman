@@ -49,8 +49,8 @@ def get_player_name():
         if name.isalpha() and len(name) <= 10:
             return name
         else:
-            print("If we sought an epic tale, we'd employ dragons for missives,"
-                  "not mere crows.")
+            print("If we sought an epic tale, we'd employ dragons"
+                  "for missives, not mere crows.")
 
 
 def display_intro(name):
@@ -59,16 +59,22 @@ def display_intro(name):
     """
     clear_window()
     print("\n")
-    print(f"By the decree of the Seven Kingdoms, let it be known that {name} the Fearless, is henceforth proclaimed as the Hero of Westeros! \n")
+    print(f"By the decree of the Seven Kingdoms, let it be known that {name} "
+          "the Fearless, is henceforth proclaimed"
+          " as the Hero of Westeros!\n")
 
 
 def display_rules(name):
     """
     Rules to the game
     """
-    print("Prepare yourself, for you are tasked with the sacred duty of guessing the name of a beloved character before your attempts expire.\n")
-    print("Fail, and the dire consequences shall befall them, with the wrath of the Seven descending upon us all!\n")
-    print("You are granted but 7 chances to rescue them from the abyss. Choose wisely, for the fate of Westeros hangs in the balance!\n")
+    print("Prepare yourself, for you are tasked with the sacred duty of"
+          "guessing the name of a beloved character"
+          "before your attempts expire.\n")
+    print("Fail, and the dire consequences shall befall them,"
+          "with the wrath of the Seven descending upon us all!\n")
+    print("You are granted but 7 chances to rescue them from the abyss."
+          "Choose wisely, for the fate of Westeros hangs in the balance!\n")
     print("\n")
     print("May your quest be guided by the Old Gods and the New!...\n")
     print("\n")
@@ -80,7 +86,8 @@ def start_game(name):
     Asking the user if they want to start the game
     """
     while True:
-        play_game = input(f"{name} the Fearless, are you ready to save a life today? Y/N:\n").upper()
+        play_game = input(f"{name} the Fearless,"
+                          "are you ready to save a life today? Y/N:\n").upper()
         print("\n")
         if play_game == "Y":
             word = get_name()
@@ -90,7 +97,9 @@ def start_game(name):
             name = get_player_name()
         else:
             clear_window()
-            print("Choose now to venture forth by entering 'Y', or delay your journey by selecting 'N' if you're not yet prepared to face the challenges ahead.")
+            print("Choose now to venture forth by entering 'Y',"
+                  "or delay your journey by selecting 'N' if you're not"
+                  "yet prepared to face the challenges ahead.")
             print("\n")
 
 
@@ -125,7 +134,8 @@ def hangman_play(word):  # code adapted from Youtube tutorial
         guess = input("Please guess a letter: \n").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
-                print(Fore.LIGHTRED_EX + "You already guessed the letter", guess)
+                print(Fore.LIGHTRED_EX + "You already guessed the letter",
+                      guess)
             elif guess not in word:
                 print("\n")
                 print(guess, Fore.LIGHTRED_EX + " is not in the word.")
@@ -133,10 +143,12 @@ def hangman_play(word):  # code adapted from Youtube tutorial
                 guessed_letters.append(guess)
             else:
                 print("\n")
-                print(Fore.GREEN + "Great! You're one step closer to being a True Hero!")
+                print(Fore.GREEN + "Great! You're one step closer"
+                      "to being a True Hero!")
                 guessed_letters.append(guess)
                 word_to_list = list(word_completion)
-                indices = [i for i, letter in enumerate(word) if letter == guess]
+                indices = [i for i, letter in enumerate(word) if
+                           letter == guess]
                 for index in indices:
                     word_to_list[index] = guess
                 word_completion = "".join(word_to_list)
@@ -156,7 +168,8 @@ def hangman_play(word):  # code adapted from Youtube tutorial
     else:
         print("\n")
         print(f"The victim was {word}, and is now dead!")
-        print("Looks like the Gods are not in your favour today! Better luck next time, ey!")
+        print("Looks like the Gods are not in your favour today!"
+              "Better luck next time, ey!")
         play_again()
 
 
