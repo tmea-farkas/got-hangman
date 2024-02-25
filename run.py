@@ -49,8 +49,8 @@ def get_player_name():
         if name.isalpha() and len(name) <= 10:
             return name
         else:
-            print("If we sought an epic tale, we'd employ dragons"
-                  "for missives, not mere crows. Less is more!")
+            print("We are going to battle, not Oldtown"
+                  "use letters only. And make it Tyrion sized.")
 
 
 def display_intro(name):

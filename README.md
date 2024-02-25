@@ -1,6 +1,6 @@
 Welcome to the Game of Thrones Hangman!
 
-![Game window](https://github.com/tmea-farkas/got-hangman/blob/main/images/hangman.png)
+![Game window](https://github.com/tmea-farkas/got-hangman/blob/main/images/game.page.png)
 [Game of Thrones Hangman](https://got-hangman-46eee30c0ce3.herokuapp.com/)
 
 # The project
@@ -28,7 +28,7 @@ This first stage of development consists of doing the research on what will be t
 - to use media elements enhancing user experience
 - to make a game that is engaging and entartaining to both first-time and returning users
 
-- **The Scope Plane**
+### **The Scope Plane**
 At this stage I used the previously gathered knowledge to create a basic idea of what features to implement for the user and what steps to take achieving those goals.
     - e.g. 
         - asking for user name
@@ -37,7 +37,7 @@ At this stage I used the previously gathered knowledge to create a basic idea of
         - creating a story behind the game to make it more enjoyable and engaging increasing the chance for return visits
         - making sure print statements are worded to fit to the theme
 
-- **The Structure Plane**
+### **The Structure Plane**
 
 *Images*:
 Considering images that are both within the theme and aestethically pleasing not losing sight of accessibility and ux.
@@ -45,41 +45,55 @@ Considering images that are both within the theme and aestethically pleasing not
 *Colours*:
 The use of a basic colour-scheme meant that the project will not look too crowded, providing ease while staying within the "bloody" theme of Game of Thrones.
 
-- **The Skeleton Plane**
+### **The Skeleton Plane**
 The Skeleton plane contributes to the placement of visual media and texts for maximum effect and efficiency. Where the structure plane begins to give shape to the mass of requirements arising from our strategic objectives the skeleton plane further refines that structure, identifying specific aspects of interface, navigation, and information design that will make the intangible structure concrete.
 
-- **The Surface Plane**
+### **The Surface Plane**
 The last stage of development, where decisions are finalised and implemented with concerns to the users sensory experience. Making the game including the colour palette and layout, where the logo appears, important information, user input requests, colour-coding to draw the users attention to key information.
 
-1. **The velcome page**
+1. **Favicon**
 
+The favicon was added to further elevate user satisfaction by providing an icon within the theme that is easily recognisable and visible.
 
-![background image](https://github.com/tmea-farkas/got-hangman/blob/main/images/background.image.png)
-![welcome page]()
-
-
-2. **Logo**
-
-Logo was created by ASCIIART.eu from an image of the Game of Thrones logo
-![GoT Logo](https://github.com/tmea-farkas/got-hangman/blob/main/images/ascii.logo.png)
-
-3. **Favicon**
-
-The favicon was added to further elevate user satisfaction
 ![GoT Favicon](https://github.com/tmea-farkas/got-hangman/blob/main/images/favicon.png)
 
-4. **Colour coordinated messages**
+2. **The velcome page**
 
-    - Green colour for positive reinforcement
-![Green message](https://github.com/tmea-farkas/got-hangman/blob/main/images/green.message.png)
+Upon loading the page the user is provided with the game terminal that has the theme-logo, a welcome message and user input request to provide a name for the user. Further more the page has a background image added to it to further boost the experience, creating the illusion that the user is the knight on the image that has to fight the dragon (the game itself). The logo was created by ACSIIART.eu from an image of the Game of Thrones logo.
+The name input has a validation rule that only allows the user to input a name that is less than 10 characters long and is only letters.
 
-    - Red for failed input
-![Red message](https://github.com/tmea-farkas/got-hangman/blob/main/images/red%20message.png)
+![background image](https://github.com/tmea-farkas/got-hangman/blob/main/images/background.image.png)
 
-5. **Y/N choice questions**
-For easy navigation Yes or No questions were implemented where appropriate to ensure the user of a good flow of navigation through the game
+![welcome page](https://github.com/tmea-farkas/got-hangman/blob/main/images/welcome.png)
 
-![Y/N questions](https://github.com/tmea-farkas/got-hangman/blob/main/images/question1.png)
+![Name validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/name.validation.png)
+
+3. **Rules Display**
+
+Once the user has provided their name the next step in the game is that the rules are displayed in the terminal, incorporating the name provided within.  
+At the end of the rules the user is asked if they are ready to start the game or not. If the user input is "Y" the game starts, if "N" the user will be taken back to the welcome page; if any other input then the user will be prompted to provide a valid input.
+
+![Game rules](https://github.com/tmea-farkas/got-hangman/blob/main/images/rules.png)
+
+![Game start validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/validation1.png)
+
+5. **The Game**
+
+Once the user starts the game, is provided with the "gallows" that will be appended with each failed guess. The user also has the number of guesses displayed as well as a display of the letters guessed so far and a request to guess a letter.
+
+![Game start](https://github.com/tmea-farkas/got-hangman/blob/main/images/start.game.png)
+
+- The number of tries will decrease with each failed guess, while each guessed letter will be added to the relevant display message.
+- Once the game started the user will be provided with instant feedback messages that will confirm correct/incorrect guesses using colour-coded messaging.
+
+![Positive guess](https://github.com/tmea-farkas/got-hangman/blob/main/images/stages1.png)
+
+![Negative guess](https://github.com/tmea-farkas/got-hangman/blob/main/images/stages2.png)
+
+
+- The user will only be able to guess letters, otherwise a validation message will appear
+
+![Letter input](https://github.com/tmea-farkas/got-hangman/blob/main/images/letter.validation.png)
 
 6. **Input validation**
 Input validation has been implemented wherever user input was requested to avoid undesired input being accepted therefore damaging user experience.
