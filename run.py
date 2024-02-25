@@ -50,7 +50,7 @@ def get_player_name():
             return name
         else:
             print("If we sought an epic tale, we'd employ dragons"
-                  "for missives, not mere crows. Abbreviate!")
+                  "for missives, not mere crows. Less is more!")
 
 
 def display_intro(name):
@@ -164,6 +164,7 @@ def hangman_play(word):  # code adapted from Youtube tutorial
         print("What do we say to the God of Death?...")
         print("\n")
         print(word + " is alive for another day because of you!")
+        print("\n")
         play_again()
     else:
         print("\n")

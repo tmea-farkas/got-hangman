@@ -51,7 +51,7 @@ The Skeleton plane contributes to the placement of visual media and texts for ma
 - **The Surface Plane**
 The last stage of development, where decisions are finalised and implemented with concerns to the users sensory experience. Making the game including the colour palette and layout, where the logo appears, important information, user input requests, colour-coding to draw the users attention to key information.
 
-1. **The background**
+1. **The velcome page**
 
 I chose to put a background image to further improve user experience
 ![background image](https://github.com/tmea-farkas/got-hangman/blob/main/images/background.image.png)
@@ -136,11 +136,11 @@ It has also been tested by pep8 standards which provided no issues with the code
 |Logo to appear on page load              | Loading game window           |Logo appears               |         ✔       |
 |Welcome message to display on page load  | Loading game window           |Message displaying         |         ✔       |
 |Ask user for name input on load          | Loading game window           |Input request displaying   |         ✔       |
-|Input validation  (< 10 characters & alphabetical) | Typing more than 10 characters|Validation message appears |         ✔       |
+|Input validation  (< 10 characters & alphabetical) message to appear until a valid input is provided | Typing more than 10 characters|Validation message appears |         ✔       |
 |Rules Displayed  | Name input completion + Enter |Displaying rules  |         ✔       |
 |Y/N choice to take user to game or back to logo display| Name input completion + Enter |- if Y = go to game, - if N = go to logo, if else = display error message and ask again |         ✔       |
 |Display hangman stages w/ each guess     |Game entry choice answer = Y and game is baing played  |Displaying each stage      |         ✔       |
-|Keep track of guessed letters            | Letter inputs                 |Letters displaying         |         ✔       |
+|Keep track of guessed letters with a print statement and add each guessed letter| Letter inputs  |Letters displaying         |         ✔       |
 |Display error(red) message when letter is not in the word  | Wrong letter input            |Message displaying and promts user until correct input |         ✔       |
 |Display confirmation(green) message when letter is in the word| Correct letter input          |Message displaying and prompts user until correct input |         ✔       |
 |Reveal result if not guessed within available number of tries | Incorrect guess until out of tries |Message displaying |         ✔       | 
