@@ -134,7 +134,7 @@ Once the game has finished, depending on the outcome the user will be provided w
 
 ![Failing message](https://github.com/tmea-farkas/got-hangman/blob/main/images/game.fail.png)
 
--Input validation
+- Input validation
 
 ![Input validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/end.game.validation.png)
 
@@ -216,10 +216,12 @@ Upon manual testing the findings were the following in regards to user story req
 |Navigate the game through without having to reload the page | Requirement met by adding the feature of Y/N questions and including validation so the user can navigate through with ease|
 |Be able to play the game again | The option of playing again at the end of the game provides the user with the choice |
 |Access to a score board | Requirement has not been met due to the feature not being implemented during development |
+
 | Returning User Expectation | Development Outcome |
 | :---: | :----: |
 |Being able to use the game again with ease | Requirement met by creating a game that is easy to understand and navigate |
-| To have access to a top10 score board | Not met as the feature has not been implemented during development | 
+| To have access to a top10 score board | Not met as the feature has not been implemented during development |
+
 | Developer Goals | Development Outcome |
 | :---: | :---: |
 | To design a game for Game of Thrones fans | Goal met by applying the theme to the game |
@@ -228,18 +230,38 @@ Upon manual testing the findings were the following in regards to user story req
 | To make a game that is both engaging and entertaining to new and returning users | Goal met by not only adding media elements, but the theme relevant wording to print messages; making sure they are period-acurate and true to the wittiness and sarcastic nature of the show|
 
 # Bugs
-- clearing the window at the wrong line
-    - moved the clear_window() function call to the relevant places
-- indentation issue with print statements
-    - fixed by adjusting the indentation
-- not taking the user back to the top at the end of the game
-    - called the relevant function at the end
-- favicon not displaying
-    - changed the file paths
-- not displaying input validation message
-    - fixed by adjusting the clear_window() function call within relevant functions
+The following bugs were discovered during testing and development:
 
-There are no other bugs left in the game that I am aware of at the time of submission.
+- clearing the window at the wrong line
+
+Once user name is provided the window is expected to clear allowing for the rules to be displayed.
+
+Bug was fixed by calling the clear_window() function before displaying the rules.
+
+
+- not taking the user back to the top at the end of the game
+
+To ensure a good flow to the game, once the user completed the game -regardless of the outcome- they should be able to navigate back to the top without having to reload the page. 
+
+This was fixed by creating the play_again() function in which the display_logo() function was called.
+
+
+- favicon not displaying
+
+When trying to import a favicon using the method known previously by the developer, a 404 error message was displaying due to the fact that Heroku does not comply with that particular method.
+
+This was fixed by using a third party website to host the image used as the favicon, then using the URL to that image implemented into the head of the HTML file.
+
+
+- not displaying input validation message
+
+At each input validation it is required of the user to choose between two options, unpon an invalid input there is an error message displaying that should prompt the user for the correct input. This was not displaying due to the clear_window() function being called after the statement clearing it before the user could read it.
+
+This was fixed by removing the clear_window() funtion call.
+
+
+
+There were no other bugs discovered in the game at the time of submission.
 
 # Acknowledgements
 
