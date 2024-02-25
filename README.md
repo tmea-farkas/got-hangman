@@ -16,6 +16,11 @@ This project is a classic Hangman game with a theme applied from the popular TV 
     - [The Skeleton plane](#the-skeleton-plane)
     - [The Surface plane](#the-surface-plane)
 3. [Features](#features)
+    - [Favicon](#favicon)
+    - [Welcome page](#the-welcome-page)
+    - [Rules display](#rules-display)
+    - [The game](#the-game)
+    - [Winning & Losing stages](#winning--losing-stages)
 4. [Features to implement](#features-left-to-implement)
 5. [Technologies](#technologies)
 6. [Deployment](#deployment)
@@ -139,6 +144,7 @@ Once the game has finished, depending on the outcome the user will be provided w
 ![Input validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/end.game.validation.png)
 
 ## Features left to implement
+
 At a future stage, I am planning to implement a score keeping system by using an API to keep a list of the top 10 players and give the user feedback if they are on the list once they have finished playing.
 
 # Technologies
