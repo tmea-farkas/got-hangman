@@ -9,11 +9,11 @@ This project is a classic Hangman game with a theme applied from the popular TV 
 ## Contents
 1. [The project](#the-project)
 2. [User Experience design](#uxd-user-experience-design)
-    1. [The Strategy plane](#the-strategy-plane)
-    2. [The Scope plane](#the-scope-plane)
-    3. [The Structure plane](#the-structure-plane)
-    4. [The Skeleton plane](#the-skeleton-plane)
-    5. [The Surface plane](#the-surface-plane)
+    - [The Strategy plane](#the-strategy-plane)
+    - [The Scope plane](#the-scope-plane)
+    - [The Structure plane](#the-structure-plane)
+    - [The Skeleton plane](#the-skeleton-plane)
+    - [The Surface plane](#the-surface-plane)
 3. [Features to implement](#features-left-to-implement)
 4. [Technologies](#technologies)
 5. [Deployment](#deployment)
@@ -77,11 +77,13 @@ The favicon was added to further elevate user satisfaction by providing an icon 
 2. **The velcome page**
 
 Upon loading the page the user is provided with the game terminal that has the theme-logo, a welcome message and user input request to provide a name for the user. Further more the page has a background image added to it to further boost the experience, creating the illusion that the user is the knight on the image that has to fight the dragon (the game itself). The logo was created by ACSIIART.eu from an image of the Game of Thrones logo.
-The name input has a validation rule that only allows the user to input a name that is less than 10 characters long and is only letters.
+
 
 ![background image](https://github.com/tmea-farkas/got-hangman/blob/main/images/background.image.png)
 
 ![welcome page](https://github.com/tmea-farkas/got-hangman/blob/main/images/welcome.png)
+
+- The name input has a validation rule that only allows the user to input a name that is less than 10 characters long and is only letters.
 
 ![Name validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/name.validation.png)
 

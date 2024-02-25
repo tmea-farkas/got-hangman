@@ -73,7 +73,7 @@ def display_rules(name):
           " before your attempts expire.\n")
     print("Fail, and the dire consequences shall befall them,"
           " with the wrath of the Seven descending upon us all!\n")
-    print("You are granted but 7 chances to rescue them from the abyss."
+    print("You are granted but 7 chances to rescue them from the abyss. "
           "Choose wisely, for the fate of Westeros hangs in the balance!\n")
     print("\n")
     print("May your quest be guided by the Old Gods and the New!...\n")
@@ -131,7 +131,7 @@ def hangman_play(word):  # code adapted from Youtube tutorial
         print("\n")
         print("Letters guessed so far: ", ",".join(guessed_letters))
         print("\n")
-        guess = input("Please guess a letter: \n").upper()
+        guess = input("Please guess a letter: \n ").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
                 print(Fore.LIGHTRED_EX + "You already guessed the letter",
@@ -177,6 +177,7 @@ def hangman_play(word):  # code adapted from Youtube tutorial
 def play_again():
     while True:
         answer = input("Shall we try another one?(Y/N) \n").upper()
+        print("\n")
         if answer == "Y":
             print("\n")
             word = get_name()
@@ -185,7 +186,8 @@ def play_again():
             display_logo()
         else:
             clear_window()
-            print("Which part of 'Y or N' escapes your undestanding? ")
+            print("Which part of 'Y' or 'N' escapes your undestanding?")
+            print("\n")
 
 
 def main():
