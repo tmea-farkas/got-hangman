@@ -1,14 +1,31 @@
-Welcome to the Game of Thrones Hangman!
+Welcome to the Game of Thrones Hangman Game!
 
 ![Game window](https://github.com/tmea-farkas/got-hangman/blob/main/images/game.page.png)
 [Game of Thrones Hangman](https://got-hangman-46eee30c0ce3.herokuapp.com/)
 
 # The project
-This project is a classic Hangman game with a theme applied from the popular TV Show Game of Thrones. This is represented by not only the logo, but the guessable character names and wording of the game creating the illusion of a quest for the player, essentially involving them in the story.
+This project is a classic Hangman game with a theme applied from the popular TV Show called Game of Thrones. This is represented by not only the logo, but the guessable character names and wording of the game creating the illusion of a quest for the player, essentially involving them in the story.
 
+## Contents
+1. [The project](#the-project)
+2. [User Experience design](#uxd-user-experience-design)
+    1. [The Strategy plane](#the-strategy-plane)
+    2. [The Scope plane](#the-scope-plane)
+    3. [The Structure plane](#the-structure-plane)
+    4. [The Skeleton plane](#the-skeleton-plane)
+    5. [The Surface plane](#the-surface-plane)
+3. [Features to implement](#features-left-to-implement)
+4. [Technologies](#technologies)
+5. [Deployment](#deployment)
+    - [Forking & Cloning](#forking-and-cloning)
+6. [Testing](#testing)
+    - [Manual Testing](#manual-testing)
+7. [Bugs](#bugs)
+8. [Acknowledgements](#acknowledgements)
 
 ## UXD (User Experience Design)
-- **The Strategy Plane**
+
+### **The Strategy Plane**
 This first stage of development consists of doing the research on what will be the use of the project. Finding out what the user would like to see in the project and what they want to use it for.
 
 *First-Time user goals*
@@ -95,10 +112,24 @@ Once the user starts the game, is provided with the "gallows" that will be appen
 
 ![Letter input](https://github.com/tmea-farkas/got-hangman/blob/main/images/letter.validation.png)
 
-6. **Input validation**
-Input validation has been implemented wherever user input was requested to avoid undesired input being accepted therefore damaging user experience.
+- There is a message that appears if the user provides a letter that's been already guessed
 
-![Input validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/validation.png)
+![Already guessed letter validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/letter.guessed.png)
+
+6. **Winning & Losing stages**
+Once the game has finished, depending on the outcome the user will be provided with instant feedback, accompanied by a question if they'd like to play another round. If the user chooses to play one more, "Y" input, the game will start again; if the input is "N" the user will be directed back to the logo. This input request also has a validation to it, so the game will only accept "Y" or "N" as an answer, otherwise prompting the user for a correct input.
+
+- If the user successfully completed the game:
+
+![Winning message](https://github.com/tmea-farkas/got-hangman/blob/main/images/game.win.png)
+
+- If the user failed to correctly guess the name:
+
+![Failing message](https://github.com/tmea-farkas/got-hangman/blob/main/images/game.fail.png)
+
+-Input validation
+
+![Input validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/end.game.validation.png)
 
 ## Features left to implement
 At a future stage, I am planning to implement a score keeping system by using an API to keep a list of the top 10 players and give the user feedback if they are on the list once they have finished playing.
@@ -106,11 +137,14 @@ At a future stage, I am planning to implement a score keeping system by using an
 # Technologies
 
 - Python language to develop the project
-- VSCode as the project IDE
+- VSCode as the development IDE
 - Colorama to add colours to print messages
 - Vecteezy to get SVG background image
 - ASCIIART.eu to create ascii art of Game of Thrones logo
-- Favicon.io to generate favicon
+- Cloudinary to host the favicon image
+- Youtube to gain insight and inspiration from other hangman games 
+    - e.g. https://www.youtube.com/watch?v=m4nEnsavl6w&t=173s - code from this tutorial has been used as inspiration
+
 
 # Deployment
 To deploy the project I followed the steps provided by C.I at the end of the Love Sandwiches walkthrough project:
@@ -142,8 +176,10 @@ This will create a local copy of the repository.
 
 
 # Testing
-The project has gone through continuous testing during development using print messages at every stage. Has been tested by several users.
-It has also been tested by pep8 standards which provided no issues with the code.
+
+- The project has gone through continuous testing during development using print messages at every stage.
+- Has been tested by several users.
+- The code has been put through the C.I. Python Linter that gave no errors.
 
 ## Manual Testing
 |        Feature    Expectation           |     Testing                   |        Result             |      Pass/Fail  |
@@ -172,7 +208,11 @@ It has also been tested by pep8 standards which provided no issues with the code
 - not taking the user back to the top at the end of the game
     - called the relevant function at the end
 - favicon not displaying
-    - changed the file paths 
+    - changed the file paths
+- not displaying input validation message
+    - fixed by adjusting the clear_window() function call within relevant functions
+
+There are no other bugs left in the game that I am aware of at the time of submission.
 
 # Acknowledgements
 
@@ -180,7 +220,7 @@ Code written by me with the help of:
 
 - Matthew Bodden - mentor
 - Slack colleagues
-- Youtube tutorials - ex.: https://www.youtube.com/watch?v=m4nEnsavl6w&t=173s
+- Youtube tutorials 
 
 Thank you!
 
