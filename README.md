@@ -1,7 +1,8 @@
 Welcome to the Game of Thrones Hangman Game!
 
 ![Game window](https://github.com/tmea-farkas/got-hangman/blob/main/images/game.page.png)
-[Game of Thrones Hangman](https://got-hangman-46eee30c0ce3.herokuapp.com/)
+
+You can visit the game by clicking this [link](https://got-hangman-46eee30c0ce3.herokuapp.com/).
 
 # The project
 This project is a classic Hangman game with a theme applied from the popular TV Show called Game of Thrones. This is represented by not only the logo, but the guessable character names and wording of the game creating the illusion of a quest for the player, essentially involving them in the story.
@@ -14,14 +15,15 @@ This project is a classic Hangman game with a theme applied from the popular TV 
     - [The Structure plane](#the-structure-plane)
     - [The Skeleton plane](#the-skeleton-plane)
     - [The Surface plane](#the-surface-plane)
-3. [Features to implement](#features-left-to-implement)
-4. [Technologies](#technologies)
-5. [Deployment](#deployment)
+3. [Features](#features)
+4. [Features to implement](#features-left-to-implement)
+5. [Technologies](#technologies)
+6. [Deployment](#deployment)
     - [Forking & Cloning](#forking-and-cloning)
-6. [Testing](#testing)
+7. [Testing](#testing)
     - [Manual Testing](#manual-testing)
-7. [Bugs](#bugs)
-8. [Acknowledgements](#acknowledgements)
+8. [Bugs](#bugs)
+9. [Acknowledgements](#acknowledgements)
 
 ## UXD (User Experience Design)
 
@@ -68,13 +70,15 @@ The Skeleton plane contributes to the placement of visual media and texts for ma
 ### **The Surface Plane**
 The last stage of development, where decisions are finalised and implemented with concerns to the users sensory experience. Making the game including the colour palette and layout, where the logo appears, important information, user input requests, colour-coding to draw the users attention to key information.
 
-1. **Favicon**
+## Features
+
+### **Favicon**
 
 The favicon was added to further elevate user satisfaction by providing an icon within the theme that is easily recognisable and visible.
 
 ![GoT Favicon](https://github.com/tmea-farkas/got-hangman/blob/main/images/favicon.png)
 
-2. **The velcome page**
+### **The welcome page**
 
 Upon loading the page the user is provided with the game terminal that has the theme-logo, a welcome message and user input request to provide a name for the user. Further more the page has a background image added to it to further boost the experience, creating the illusion that the user is the knight on the image that has to fight the dragon (the game itself). The logo was created by ACSIIART.eu from an image of the Game of Thrones logo.
 
@@ -87,7 +91,7 @@ Upon loading the page the user is provided with the game terminal that has the t
 
 ![Name validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/name.validation.png)
 
-3. **Rules Display**
+### **Rules Display**
 
 Once the user has provided their name the next step in the game is that the rules are displayed in the terminal, incorporating the name provided within.  
 At the end of the rules the user is asked if they are ready to start the game or not. If the user input is "Y" the game starts, if "N" the user will be taken back to the welcome page; if any other input then the user will be prompted to provide a valid input.
@@ -96,7 +100,7 @@ At the end of the rules the user is asked if they are ready to start the game or
 
 ![Game start validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/validation1.png)
 
-5. **The Game**
+### **The Game**
 
 Once the user starts the game, is provided with the "gallows" that will be appended with each failed guess. The user also has the number of guesses displayed as well as a display of the letters guessed so far and a request to guess a letter.
 
@@ -118,7 +122,8 @@ Once the user starts the game, is provided with the "gallows" that will be appen
 
 ![Already guessed letter validation](https://github.com/tmea-farkas/got-hangman/blob/main/images/letter.guessed.png)
 
-6. **Winning & Losing stages**
+### **Winning & Losing stages**
+
 Once the game has finished, depending on the outcome the user will be provided with instant feedback, accompanied by a question if they'd like to play another round. If the user chooses to play one more, "Y" input, the game will start again; if the input is "N" the user will be directed back to the logo. This input request also has a validation to it, so the game will only accept "Y" or "N" as an answer, otherwise prompting the user for a correct input.
 
 - If the user successfully completed the game:
@@ -201,6 +206,26 @@ This will create a local copy of the repository.
 |Reveal confirmation message when name guessed correctly before tries run out | Correctly guessing before tries run out   |Message displaying |         ✔       |
 |Y/N question to play another game  | Finishing the game   |- if Y = new game, - if N = back to logo, if else = prompt user to correct input |         ✔       |
 
+
+Upon manual testing the findings were the following in regards to user story requirements:
+
+| First-time User expectation | Development Outcome |
+| :----: | :------:|
+|Accessing information relating to the game | Requirement met by applying a theme and displaying rules upon user input|
+|Understanding the flow of game and rules | Requirement met by displaying the rules that are simple and clear. As well as designing the game with an intuitive flow |
+|Navigate the game through without having to reload the page | Requirement met by adding the feature of Y/N questions and including validation so the user can navigate through with ease|
+|Be able to play the game again | The option of playing again at the end of the game provides the user with the choice |
+|Access to a score board | Requirement has not been met due to the feature not being implemented during development |
+| Returning User Expectation | Development Outcome |
+| :---: | :----: |
+|Being able to use the game again with ease | Requirement met by creating a game that is easy to understand and navigate |
+| To have access to a top10 score board | Not met as the feature has not been implemented during development | 
+| Developer Goals | Development Outcome |
+| :---: | :---: |
+| To design a game for Game of Thrones fans | Goal met by applying the theme to the game |
+| To ensure easy navigation | Goal met by implementing Y/N questions to ensure intuitive navigation |
+| To use media elements enhancing user experience | Goal met by adding a background image and linear gradient to enhance the "storyline" of the game |
+| To make a game that is both engaging and entertaining to new and returning users | Goal met by not only adding media elements, but the theme relevant wording to print messages; making sure they are period-acurate and true to the wittiness and sarcastic nature of the show|
 
 # Bugs
 - clearing the window at the wrong line
