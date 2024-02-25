@@ -53,8 +53,10 @@ The last stage of development, where decisions are finalised and implemented wit
 
 1. **The velcome page**
 
-I chose to put a background image to further improve user experience
+
 ![background image](https://github.com/tmea-farkas/got-hangman/blob/main/images/background.image.png)
+![welcome page]()
+
 
 2. **Logo**
 
